@@ -26,7 +26,7 @@
 
 <body class="body">
     <!-- nav bar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" aria-label="Navegação">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top" aria-label="Navegação">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
                 <img height="40px" src="./image/logobh.png" alt="Logo BootsHack">
@@ -39,45 +39,48 @@
             <div class="collapse navbar-collapse" id="navbarPrincipal">
                 <ul class="navbar-nav ms-4 me-auto">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Sobre</a>
+                        <a class="nav-link active dyn-font" aria-current="page" href="#">Sobre</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="./introducao.html" role="button"
+                        <a class="nav-link dropdown-toggle dyn-font" href="./introducao.html" role="button"
                             data-bs-toggle="dropdown" aria-expanded="false">Guideline</a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="./daltonismo.html">Daltonismo</a></li>
-                            <li><a class="dropdown-item" href="./autismo.html">Autismo</a></li>
-                            <li><a class="dropdown-item" href="./defvisuais.html">Deficiêntes Visuais</a></li>
-                            <li><a class="dropdown-item" href="./defauditivos.html">Deficiêntes Auditivos</a></li>
-                            <li><a class="dropdown-item" href="./defmotora.html">Deficiência Motora</a></li>
-                            <li><a class="dropdown-item" href="./dislexia.html">Dislexia</a></li>
+                            <li><a class="dropdown-item dyn-font" href="/introducao.html">Introdução</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item dyn-font" href="./daltonismo.html">Daltonismo</a></li>
+                            <li><a class="dropdown-item dyn-font" href="./autismo.html">Autismo</a></li>
+                            <li><a class="dropdown-item dyn-font" href="./defvisuais.html">Deficiêntes Visuais</a></li>
+                            <li><a class="dropdown-item dyn-font" href="./defauditivos.html">Deficiêntes Auditivos</a></li>
+                            <li><a class="dropdown-item dyn-font" href="./defmotora.html">Deficiência Motora</a></li>
+                            <li><a class="dropdown-item dyn-font" href="./dislexia.html">Dislexia</a></li>
                         </ul>
                         </a>
                     <li class="nav-item">
-                        <a class="nav-link" href="./depoimentos.html">Depoimentos</a>
+                        <a class="nav-link dyn-font" href="./depoimentos.html">Depoimentos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./sobrenos.html">Sobre nós</a>
+                        <a class="nav-link dyn-font" href="./sobrenos.html">Sobre nós</a>
                     </li>
                 </ul>
                 <ul class="navbar-nav ms-auto me-4">
                     <li class="nav-item">
                         <a class="nav-link" href="#">
-                            <span class="nav-icons material-symbols-outlined">
+                            <span class="nav-icons material-symbols-outlined dyn-font" accesskey="3"
+                            onclick="window.toggleContrast()" onkeydown="window.toggleContrast()">
                                 contrast
                             </span>
                         </a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">
-                            <span class="nav-icons material-symbols-outlined">
+                            <span class="nav-icons material-symbols-outlined dyn-font" onclick="increaseFont()">
                                 text_increase
                             </span>
                         </a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">
-                            <span class="nav-icons material-symbols-outlined">
+                            <span class="nav-icons material-symbols-outlined dyn-font" onclick="decreaseFont()">
                                 text_decrease
                             </span>
                         </a>
@@ -91,15 +94,15 @@
 
     <!-- sobre  -->
     <div>
-        <div class="container sobre py-4">
+        <div class="container sobre py-5">
             <div class="row row-cols-md-2">
                 <div class="col order-md-1 text-center text-md-start ps-5">
                     <img class="slogan mb-3" src="./image/slogan.svg" alt="Slogan">
-                    <h1 class="texto-introducao ms-4">O site que te ajuda a<br>construir webpages rápidas<br>e
+                    <h1 class="texto-introducao ms-4 dyn-font">O site que te ajuda a<br>construir webpages rápidas<br>e
                         acessíveis a todos!
                     </h1>
                 </div>
-                <div class="col order-md-2 text-center">
+                <div class="col-6 order-md-2 text-center">
                     <img class="img-fluid" src="./image/logosobre.png" alt="Logo">
                 </div>
             </div>
@@ -110,8 +113,8 @@
                 <img class="img-fluid img-2" src="./image/imagemsobre1.png" alt="Imagem Ilustrativa">
             </div>
 
-            <div class="col-7 ps-5 d-flex align-items-center">
-                <h3>
+            <div class="col-5 ps-5 d-flex align-items-center">
+                <h3 class="dyn-font">
                     Acessibilidade vai além de incluir as pessoas que precisam dela, mas sim ajustar
                     nosso dia-a-dia fazendo com que recursos acessíveis sejam rotina!
                 </h3>
@@ -124,15 +127,15 @@
     <!-- fim sobre  -->
 
     <!-- daltonismo  -->
-    <div class="container daltonismo">
-        <h2 class="text-center">Daltonismo</h2>
-        <p>Os daltônicos nascem com uma condição rara, chamada pelos médicos como discromatopsia ou
+    <div class="container daltonismo py-5">
+        <h2 class="text-center dyn-font">Daltonismo</h2>
+        <p class="dyn-font">Os daltônicos nascem com uma condição rara, chamada pelos médicos como discromatopsia ou
             daltonismo. Existem
             tipos diferentes de daltonismo, entre eles:
         <ul class="my-3">
-            <li><span class="fw-bold">Protanopia:</span> Redução ou completa ausência do pigmento vermelho;</li>
-            <li><span class="fw-bold">Deuteranopia:</span> Não conseguem ver a cor verde;</li>
-            <li><span class="fw-bold">Tritanopia:</span> É um tipo mais raro de daltonismo e
+            <li class="dyn-font"><span class="fw-bold">Protanopia:</span> Redução ou completa ausência do pigmento vermelho;</li>
+            <li class="dyn-font"><span class="fw-bold">Deuteranopia:</span> Não conseguem ver a cor verde;</li>
+            <li class="dyn-font"><span class="fw-bold">Tritanopia:</span> É um tipo mais raro de daltonismo e
                 que interfere na forma como as cores azul e amarelo são vistas. E, embora a pessoa não perca,
                 totalmente, a
                 capacidade de enxergar o azul, a cor toma tonalidades diferentes. O amarelo, por outro lado, fica rosa e
@@ -140,7 +143,7 @@
                 laranja não existe.</li>
         </ul>
         </p>
-        <p class="text-center fw-bold">Sendo assim, tons acessíveis ficam entre tons claros de rosa, amarelos
+        <p class="text-center fw-bold dyn-font">Sendo assim, tons acessíveis ficam entre tons claros de rosa, amarelos
             amarronzados, tonalidades de azul e marrom.</p>
         <div class="row">
             <div class="col text-center">
@@ -151,8 +154,8 @@
                             fill="#9898A2" />
                     </svg>
                 </div>
-
-                RGB(152, 152, 162)<br>Hex Code: #9898A2
+                <span class="dyn-font">RGB(152, 152, 162)<br>Hex Code: #9898A2</span>
+                
             </div>
             <div class="col text-center">
                 <div class="w-100">
@@ -162,8 +165,8 @@
                             fill="#DEB841" />
                     </svg>
                 </div>
-                RGB(222, 184, 65)<br>Hex Code: #DEB841
-            </div>
+                    <span class="dyn-font">RGB(222, 184, 65)<br>Hex Code: #DEB841</span>          
+                </div>
             <div class="col text-center">
                 <div class="w-100">
                     <svg width="80" height="95" viewBox="0 0 80 95" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -172,8 +175,8 @@
                             fill="#695252" />
                     </svg>
                 </div>
-                RGB(105, 82, 82)<br>Hex Code: #695252
-            </div>
+                    <span class="dyn-font">RGB(105, 82, 82)<br>Hex Code: #695252</span>      
+                </div>
             <div class="col text-center">
                 <div class="w-100">
                     <svg width="80" height="95" viewBox="0 0 80 95" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -182,8 +185,8 @@
                             fill="#152D73" />
                     </svg>
                 </div>
-                RGB(21, 45, 115)<br>Hex Code: #152D73
-            </div>
+                    <span class="dyn-font">RGB(21, 45, 115)<br>Hex Code: #152D73</span>         
+                </div>
         </div>
 
         <hr class="mx-auto w-75">
@@ -191,13 +194,13 @@
     <!-- fim daltonismo  -->
 
     <!-- autismo  -->
-    <div class="container autismo">
-        <div class="row justify-content-center ps-5">
+    <div class="container autismo py-5">
+        <div class="row">
             <div class="col-6">
-                <h2 class="text-center">Autismo</h2>
-                <p>
+                <h2 class="dyn-font">Autismo</h2>
+                <p class="dyn-font">
                     Uma página acessível para uma pessoa com autismo contém:
-                <ul>
+                <ul class="dyn-font">
                     <li>Interfaces simples;</li>
                     <li>Nenhuma distração como efeitos e propagandas;</li>
                     <li>Cores que não sejam saturadas;</li>
@@ -214,22 +217,24 @@
     <!-- fim autismo  -->
 
     <!-- deficientes visuais -->
-    <div class="container def-visual">
+    <div class="container def-visual py-5">
         <div class="row">
-            <div class="col-6 text-center">
+            <div class="col-6">
                 <img src="./image/imagemdeficienciavisual.png" alt="Deficiência Visual">
             </div>
-            <div class="col-6">
-                <h2 class="text-center mt-4">Deficientes Visuais</h2>
-                <p>As seguintes opções são soluções acessíveis para os usuários deficientes visuais:
-                <ul>
+            <div class="col-5">
+                <h2 class=" mt-4 dyn-font">Deficientes Visuais</h2>
+                <p class="dyn-font">As seguintes opções são soluções acessíveis para os usuários deficientes visuais:
+                <ul class="dyn-font">
                     <li>Audio Descrição</li>
                     <li>Reconhecimento por voz</li>
                 </ul>
             </div>
             <div class="col-12">
-                <h2 class="text-center">Código de reconhecimento e comandos de voz</h2>
-                <img class="h-50 img-fluid mt-5 img-thumbnail" src="./image/codvoz.png" alt="Código para desenvolvedores">
+                <h2 class="text-center dyn-font">Código de reconhecimento e comandos de voz</h2>
+                <div class="text-center">
+                    <img class="h-50 img-fluid mt-5 img-thumbnail " src="./image/codvoz.png" alt="Código para desenvolvedores">
+                </div>
             </div>
         </div>
         <hr class="mx-auto w-75">
@@ -237,14 +242,16 @@
     <!-- fim deficientes visuais  -->
 
     <!-- deficientes auditivos  -->
-    <div class="container">
-        <h2 class="text-center">Deficientes Auditivos</h2>
-        <p>Sigla de Língua Brasileira de Sinais, é um conjunto de gestos utilizado por pessoas com deficiência
+    <div class="container mb-5">
+        <h2 class="text-center dyn-font">Deficientes Auditivos</h2>
+        <p class="dyn-font">Sigla de Língua Brasileira de Sinais, é um conjunto de gestos utilizado por pessoas com deficiência
             auditiva e surdos para a comunicação entre eles e outras pessoas, também ouvintes.
         </p>
         <div>
-            <h2 class="text-center mt-4">Código de Plugin Libras</h2>
-            <img class="w-50 mt-3 img-thumbnail" src="./image/codlibras.png" alt="Código para desenvolvedores">
+            <h2 class="text-center mt-4 dyn-font">Código de Plugin Libras</h2>
+            <div class="text-center">
+                <img class="w-50 mt-3 img-thumbnail" src="./image/codlibras.png" alt="Código para desenvolvedores">
+            </div>
         </div>
         <hr>
     </div>
@@ -258,29 +265,33 @@
     <!-- fim dislexia  -->
 
     <!-- depoimentos  -->
-    <div class="container bg-secondary my-5 rounded p-3">
-        <h2>Depoimentos</h2>
+    <div class="container bg-secondary my-5 rounded p-3 text-black">
+        <h2 class="dyn-font">Depoimentos</h2>
         <div class="row">
             <div class="col border-end">
-                <p>
+                <p class="dyn-font">
                     “Falou em acessibilidade, falou em BootsHack, o site mais completo para os desenvolvedores. Sempre
                     atualizado e me ajudando a construir uma internet mais inclusiva! Recomendo!”
 
                 </p>
                 <div>
+                    <span class="dyn-font">                    
                     Jonas Souza <br>
                     UI Designer
+                    </span>
                 </div>
             </div>
             <div class="col">
-                <p>
+                <p class="dyn-font">
                     “O BootsHack sempre me ajuda demais! Frequentemente acesso o portal para consultar as melhores
                     práticas e aplicá-las no meu dia a dia. Como Front-end Developer, recomendo a plataforma!”
 
                 </p>
                 <div>
-                    Sula Miranda Silva <br>
-                    UI Designer
+                    <span class="dyn-font">
+                        Sula Miranda Silva <br>
+                        UI Designer
+                    </span>
                 </div>
             </div>
         </div>
@@ -295,10 +306,10 @@
     <div class="container">
         <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-2 my-5">
             <div class="col mb-3">
-                <a href="/" class="d-flex align-items-center mb-3 link-dark text-decoration-none fw-bold">
+                <a href="/" class="d-flex align-items-center mb-3 link-dark text-decoration-none fw-bold dyn-font">
                     BOOTSHACK
                 </a>
-                <small class="text-muted">O site que te ajuda a construir webpages rápidas e acessíveis a todos!</small>
+                <small class="text-muted dyn-font">O site que te ajuda a construir webpages rápidas e acessíveis a todos!</small>
                 <div class="d-flex w-100 justify-content-around py-5">
                     <i class="fa-brands fa-lg fa-facebook text-secondary"></i>
                     <i class="fa-brands fa-lg fa-twitter text-secondary"></i>
@@ -307,32 +318,32 @@
             </div>
 
             <div class="col mb-3">
-                <h5>Companhia</h5>
+                <h5 class="dyn-font">Companhia</h5>
                 <ul class="nav flex-column">
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Sobre nós</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Fale conosco</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted dyn-font">Sobre nós</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted dyn-font">Fale conosco</a></li>
                 </ul>
             </div>
 
             <div class="col mb-3">
-                <h5>Ajuda</h5>
+                <h5 class="dyn-font">Ajuda</h5>
                 <ul class="nav flex-column">
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">SAC</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted dyn-font">SAC</a></li>
                 </ul>
             </div>
 
             <div class="col mb-3">
-                <h5>Mais</h5>
+                <h5 class="dyn-font">Mais</h5>
                 <ul class="nav flex-column">
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Exemplos</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Parcerias</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted dyn-font">Exemplos</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted dyn-font">Parcerias</a></li>
                 </ul>
             </div>
 
             <div class="col mb-3">
-                <h5>Termos</h5>
+                <h5 class="dyn-font">Termos</h5>
                 <ul class="nav flex-column">
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Termos de Uso</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted ">Termos de Uso</a></li>
                 </ul>
             </div>
         </footer>
